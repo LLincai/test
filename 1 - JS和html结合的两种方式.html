@@ -1,0 +1,21 @@
+<html>
+	<head>
+		
+	</head>
+	
+	<body>
+		<!--js和html相结合的第一种方式：通过<script>标签存放JS代码-->
+		<script type="text/javascript">
+			alert("hello javascript");
+		</script>
+		
+		<!--js和html相结合的第二种方式：将js代码封装到js文件中，再通过script标签的src属性进行导入，
+		src指定js文件后，script标签中js代码不会再执行了，所以通常导入js文件都是使用单独的<script>来完成-->
+		<script type="text/javascript" src="alert.js">
+			alert("hello javascript");/*这句代码不会被执行*/
+		</script>
+		
+		<!--单独<script>标签-->
+		<script type="text/javascript" src="alert.js"></script>
+	</body>
+</html>
